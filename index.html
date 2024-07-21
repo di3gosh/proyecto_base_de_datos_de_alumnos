@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Base de datos de alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Gestión de Alumnos</h1>
+
+    <section>
+        <h2>Alta de Alumnos</h2>
+        <form id="altaAlumnoForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" required>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+            <button type="submit">Agregar Alumno</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Inscripción a Materias</h2>
+        <form id="inscribirMateriaForm">
+            <label for="alumno">Nombre del Alumno:</label>
+            <input type="text" id="alumno" required>
+            <label for="materia">Materia:</label>
+            <input type="text" id="materia" required>
+            <button type="submit">Inscribir</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Asignación de Calificaciones</h2>
+        <form id="asignarCalificacionForm">
+            <label for="alumnoCalificacion">Nombre del Alumno:</label>
+            <input type="text" id="alumnoCalificacion" required>
+            <label for="materiaCalificacion">Materia:</label>
+            <input type="text" id="materiaCalificacion" required>
+            <label for="calificacion">Calificación:</label>
+            <input type="number" id="calificacion" required>
+            <button type="submit">Asignar Calificación</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Consultas</h2>
+        <button id="consultarPromedio">Obtener Promedio del Alumno</button>
+        <button id="consultarPromedioGrupo">Obtener Promedio del Grupo</button>
+        <button id="ordenarAlumnosAscendente">Ordenar Alumnos Ascendente</button>
+        <button id="ordenarAlumnosDescendente">Ordenar Alumnos Descendente</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
